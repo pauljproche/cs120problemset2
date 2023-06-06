@@ -10,7 +10,6 @@
                 margin-top: 100px;            
             }
             body {
-                background-image: url("output-onlinepngtools.png");
                 background-color: rgba(204, 204, 204, 0.5);
             }
             h1, h2 {
@@ -27,8 +26,19 @@
                 width: 50%;
                 height: auto;
             }
+            .flex-parent-element {
+                display: flex;
+                align-items: flex-start;
+            }
+            .background-image {
+                background-image: url("cheeseburger.jpg");
+                background-size: cover;
+                width: 50%;
+                height: 300px;
+            }
             .explanation {
-                padding-top: 2%;
+                width: 50%;
+                margin-left: 20px;
             }
             table, th, td {
                 border: 1px solid #000000;
@@ -85,13 +95,15 @@
             wide selection of customizable options ensure that every visit is a 
             deliciously unique culinary adventure.
         </p>
-        <img src="cheeseburger.jpg" ALIGN="left" hspace="15" vspace="15"/>
-        <div class="explanation">
-            My first choice is always the "All The Way" Double Cheeseburger, a 
-            tasteful explosion of flavors and textures. I pair it with their 
-            uniquely crunchy fries cooked in peanut oil, providing a savory 
-            accompaniment. The meal is capped off with a creamy, vanilla milkshake.
-        </div>
+        <div class="flex-parent-element">
+            <div class="background-image"></div>
+            <div class="explanation">
+                My first choice is always the "All The Way" Double Cheeseburger, a
+                tasteful explosion of flavors and textures. I pair it with their
+                uniquely crunchy fries cooked in peanut oil, providing a savory
+                accompaniment. The meal is capped off with a creamy, vanilla milkshake.
+            </div>
+        </div>  
         <br style="clear:both"/>
         <table>
             <tr>
